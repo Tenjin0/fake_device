@@ -24,7 +24,7 @@ export function addListeners(this: FakeDevice, socket: Socket) {
 	})
 	socket.on('register.ask', () => {
 		console.log('<<< register.ask')
-		this.emitEvent('register.response', { serial: 'fake_serial 1', version: '1.0.0' })
+		this.emitEvent('register.response', { serial: 'fake_serial_1', version: '1.0.0' })
 	})
 
 	socket.on('register.ack', () => {
